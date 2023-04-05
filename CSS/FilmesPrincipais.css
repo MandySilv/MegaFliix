@@ -1,0 +1,54 @@
+.FilmesPrincipais{
+    height: 900px;
+    background-color: rgb(68, 5, 127);
+    background: linear-gradient(176, 58, 242, 1) 0%, rgba(130, 39, 196, 1) 41%, rgba(96, 22, 167, 1)100%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(6. 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
+img, .atropos{
+    width: 450px;
+    height: auto;
+    border-radius: 16px;
+    gap: 50px;
+    margin-bottom: 20px;
+}
+.FilmesPrincipais__titulo{
+    grid-column: 1/6;
+    grid-row: 1;
+}
+.my-atropos{
+    
+    grid-column: 2;
+    grid-row: 2;
+}
+.my-atropos2{
+    grid-column: 3;
+    grid-row: 2;
+}
+.my-atropos3{
+    grid-column: 4;
+    grid-row: 2;
+}
+.my-atropos4{
+    grid-column: 2;
+    grid-row: 3;
+   
+}
+.my-atropos5{
+    grid-column: 3;
+    grid-row: 3;
+}
+.my-atropos6{
+    grid-column: 4;
+    grid-row: 3;
+}
+@media(max-width:720px){
+    .FilmesPrincipais{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+}

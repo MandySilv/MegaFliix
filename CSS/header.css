@@ -1,0 +1,128 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+
+header{
+    background-image: url(../imagens/filmesCatalogo.png);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    background-size: cover;
+}
+  nav{
+    display: flex;
+    justify-content: space-around;
+    grid-column: 1/13;
+    align-items: center;
+    grid-row-start: 1;
+    
+}
+
+li{
+    display: inline-block;
+    margin-right: 8px;
+    color: aliceblue;
+    align-items: center;
+    
+}
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+ 
+.Logo{
+width: 122px;
+height: 81px;
+
+}
+
+.logo__div{
+display: flex;
+flex-direction: column;
+align-items: center;
+color: aliceblue;
+
+}
+
+h6{
+    font-family: Roboto;
+    font-size: 20px;
+    color: rgb(224, 10, 178);
+    margin-top: 5px;
+}
+.home{
+    color: pink;
+}
+hr{
+    border-color: pink;
+    margin-top: 5px;
+    display: flex;
+}
+
+h1{
+
+    grid-row-start: 3;
+    color: aliceblue;
+    grid-column: 2/6;
+    font-family: Roboto;
+    font-size: 45px;
+}
+h2{
+   
+    display: inline;
+    grid-row-start: 5;
+    color: aliceblue;
+    font-size: 12;
+    font-family: Roboto;
+    grid-column: 2/6;
+    font-weight: 200px;
+
+}
+
+.btn{
+    grid-column: 2/7;
+    grid-row-start: 6;
+    color: aliceblue;
+    display: flex
+    
+}
+.btn__Start{
+    background-color: rgb(226, 21, 141);
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.btn__plano{
+    background-color: #252c57;
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@media only screen and (max-width: 900px){
+    .menu__links{
+        display: none;
+    }
+    h1{
+        font-size: 24px;
+    }
+    h2{
+        font-size: 12px;
+    }
+    .btn__plano{
+        width: 100px;
+        height: 50px;
+    }
+    .btn__Start{
+        width: 100px;
+        height: 50px;
+    }
+}
